@@ -4,7 +4,8 @@ print(my_dict.get('Михаил'))
 print(my_dict.get('Квазимодо'))
 my_dict['Антон'] = 1999
 my_dict['Квазимодо'] = 2011
-del my_dict['Макс']
+Del_value = my_dict.pop('Макс')
+print('Удалено', Del_value)
 print(my_dict.get('Макс'))
 print(my_dict)
 
