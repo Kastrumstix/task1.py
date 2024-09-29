@@ -18,7 +18,7 @@ class Eagle:
 
 class Pegasus(Horse, Eagle):
     def __init__(self):
-        Horse.__init__(self)
+        super().__init__()
         Eagle.__init__(self)
 
     def move(self, dx, dy):
