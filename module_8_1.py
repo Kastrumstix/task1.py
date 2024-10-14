@@ -1,10 +1,13 @@
 def add_everything_up(a, b):
-    if isinstance(a, (int, float)) and isinstance(b, (int, float)):
-        return a + b
-    elif isinstance(a, str) and isinstance(b, str):
-        return a + b
-    else:
-        return str(a) + str(b)
+    try:
+        if isinstance(a, (int, float)) and isinstance(b, (int, float)):
+            return a + b
+        elif isinstance(a, str) and isinstance(b, str):
+            return a + b
+        else:
+            return str(a) + str(b)
+    except:
+        print("Некорректный тип данных")
 
 
 print(add_everything_up(123.456, 'строка'))
